@@ -2,11 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('C:\\Users\\Shrutii\\Desktop\\Project\\backgroundlogin.jpg'); /* Background image for the body */
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 122, 204, 0.7);
+            height: 120px;
+            color: #fff;
+            text-align: center;
+            line-height: 120px;
+            position: relative; /* Add position for logo placement */
+        }
+        .login-container {
+            max-width: 400px;
+            margin: center;
+            margin-top: 50px;
+        }
+
+        .login-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            position: absolute;
+            top: -44px; /* Adjust the top position as needed */
+            left: -15px; /* Adjust the left position as needed */
+            width: 250px; /* Set the desired width */
+            height: 250px; /* Set the desired height */
+            
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            color: #dc3545;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        .security-info {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        footer {
+            background-color: rgba(0, 122, 204, 0.7);
+            height: 60px;
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
 </head>
-<body>
-    <p>hello All</p>
-	<h1>Elangkavi</h1>
+<body><header>
+    <!-- Your header content goes here -->
+    <img class="logo" src="C:\Users\Shrutii\Desktop\Project\Logo.png" alt="RideTech Logo">
+    
+</header>
+    <div class="container login-container">
+        <div class="login-form">
+            <h2 class="text-center">Login</h2>
+            
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            
+            <!-- Password Reset Link -->
+            <div class="form-group">
+                <a href="#">Forgot your password?</a>
+            </div>
+            
+            <!-- Remember Me Checkbox -->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            
+            <!-- Login Button -->
+            <button type="button" class="btn btn-primary btn-block">Login</button>
+            
+            <!-- Error Messages -->
+            <div class="error-message">
+                <!-- Display error messages here -->
+            </div>
+            
+            <!-- Register/Signup Link -->
+            <div class="text-center">
+                Don't have an account? <a href="Register.html">Sign up</a>
+            </div>
+
+            <!-- Security Features Info -->
+            <div class="security-info mt-3">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+                <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<br>
+<footer>
+    <!-- Your footer content goes here -->
+    &copy; 2023 Your Automotive Parts Store. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+</footer>
 </html>
